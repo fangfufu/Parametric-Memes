@@ -1,0 +1,4368 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    164244,       4358]
+NotebookOptionsPosition[    163841,       4340]
+NotebookOutlinePosition[    164173,       4355]
+CellTagsIndexPosition[    164130,       4352]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"x", "[", "t_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"323", "/", "2"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"3", "/", "2"}], "-", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"33", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "-", "t"}], "]"}]}], ")"}], "/", 
+          "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"47", "/", "10"}], "+", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"33", "/", "7"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "12"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"11", "/", "7"}], "+", 
+            RowBox[{"8", "*", "t"}]}], "]"}], "/", "7"}]}], ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"51", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "47"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1138", "/", "5"}], "-", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"4", "/", "3"}], "-", 
+            RowBox[{"9", "*", "t"}]}], "]"}], "/", "7"}], "-", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"7", "/", "6"}], "-", 
+            RowBox[{"7", "*", "t"}]}], "]"}], "/", "8"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"22", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"28", "/", "19"}], "-", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"325", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"47", "/", "10"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "3"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"113", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "12"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"79", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"15", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"16", "/", "11"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"54", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"35", "/", "23"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"20", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"8", "/", "5"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"18", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "8"}], "+", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "13"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"6", "/", "5"}], "+", 
+            RowBox[{"13", "*", "t"}]}], "]"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "12"}], "+", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"7", "/", "9"}], "+", 
+            RowBox[{"15", "*", "t"}]}], "]"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"3", "/", "2"}], "+", 
+              RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"113", "/", "25"}], "+", 
+              RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"25", "/", "11"}], "+", 
+            RowBox[{"18", "*", "t"}]}], "]"}], "/", "17"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"79", "/", "17"}], "+", 
+            RowBox[{"19", "*", "t"}]}], "]"}], "/", "4"}]}], ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"47", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "43"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1331", "/", "5"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"11", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "-", 
+              RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"64", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "-", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"863", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "-", "t"}], "]"}]}], ")"}], "/", 
+          "23"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"188", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "12"}], "+", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"51", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"21", "/", "13"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "26"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"47", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "12"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"19", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "8"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"25", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"47", "/", "10"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"8", "/", "5"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"25", "/", "17"}], "+", 
+            RowBox[{"11", "*", "t"}]}], "]"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"22", "/", "13"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"8", "/", "5"}], "+", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"22", "/", "13"}], "+", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "8"}], "+", 
+              RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"11", "/", "6"}], "+", 
+            RowBox[{"16", "*", "t"}]}], "]"}], "/", "20"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "8"}], "+", 
+              RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"40", "/", "9"}], "+", 
+            RowBox[{"18", "*", "t"}]}], "]"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"23", "/", "17"}], "+", 
+            RowBox[{"19", "*", "t"}]}], "]"}], "/", "19"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"23", "/", "5"}], "+", 
+            RowBox[{"20", "*", "t"}]}], "]"}], "/", "21"}]}], ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"43", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "39"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"3592", "/", "15"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "-", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"23", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "-", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"169", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"47", "/", "10"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "12"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2177", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "12"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "34"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"47", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"23", "/", "14"}], "+", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{"3", "*", 
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"13", "/", "8"}], "+", 
+            RowBox[{"4", "*", "t"}]}], "]"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"37", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"8", "/", "5"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"17", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"23", "/", "14"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"20", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"8", "/", "5"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"13", "/", "8"}], "+", 
+           RowBox[{"10", "*", "t"}]}], "]"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"23", "/", "13"}], "+", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"24", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"23", "/", "14"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "25"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"37", "/", "8"}], "+", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"10", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "8"}], "+", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "19"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"9", "/", "5"}], "+", 
+              RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"18", "/", "11"}], "+", 
+              RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"103", "/", "26"}], "+", 
+            RowBox[{"17", "*", "t"}]}], "]"}], "/", "24"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"17", "/", "10"}], "+", 
+            RowBox[{"18", "*", "t"}]}], "]"}], "/", "16"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"104", "/", "23"}], "+", 
+            RowBox[{"19", "*", "t"}]}], "]"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"10", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"32", "/", "19"}], "+", 
+              RowBox[{"20", "*", "t"}]}], "]"}]}], ")"}], "/", "19"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"13", "/", "7"}], "+", 
+            RowBox[{"21", "*", "t"}]}], "]"}], "/", "6"}]}], ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"39", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "35"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2531", "/", "13"}], "-", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"13", "/", "9"}], "-", 
+            RowBox[{"14", "*", "t"}]}], "]"}], "/", "10"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"10", "/", "7"}], "-", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"8", "/", "7"}], "-", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"9", "/", "10"}], "-", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"40", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "-", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"81", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"3", "/", "2"}], "-", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1763", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "25"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"922", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"105", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"31", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"20", "/", "13"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"37", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "25"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"20", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"32", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "9"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "11"}], "+", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"58", "/", "13"}], "+", 
+            RowBox[{"15", "*", "t"}]}], "]"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"13", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"7", "/", "5"}], "+", 
+              RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"12", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"32", "/", "33"}], "+", 
+              RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "25"}]}], 
+        ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"35", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "31"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1361", "/", "13"}], "+", 
+         RowBox[{"37", "*", 
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"79", "/", "17"}], "+", "t"}], "]"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"375", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"23", "/", "5"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "34"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"67", "/", "15"}], "+", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"40", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"9", "/", "2"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"11", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"57", "/", "13"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"31", "/", "7"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"30", "/", "7"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "3"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"25", "/", "6"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"21", "/", "5"}], "+", 
+            RowBox[{"10", "*", "t"}]}], "]"}], "/", "2"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"19", "/", "5"}], "+", 
+            RowBox[{"11", "*", "t"}]}], "]"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"25", "/", "6"}], "+", 
+            RowBox[{"12", "*", "t"}]}], "]"}], "/", "4"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"34", "/", "9"}], "+", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"33", "/", "8"}], "+", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"23", "/", "11"}], "+", 
+            RowBox[{"15", "*", "t"}]}], "]"}], "/", "16"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"65", "/", "14"}], "+", 
+            RowBox[{"16", "*", "t"}]}], "]"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"20", "/", "19"}], "+", 
+            RowBox[{"17", "*", "t"}]}], "]"}], "/", "8"}]}], ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"31", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "27"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1168", "/", "7"}], "-", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"29", "/", "19"}], "-", 
+            RowBox[{"17", "*", "t"}]}], "]"}], "/", "12"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"22", "/", "15"}], "-", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "16"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"269", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "11"}], "-", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "54"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"632", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"224", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"205", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"40", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"47", "/", "10"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"23", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"99", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"12", "/", "7"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "98"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"38", "/", "25"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"22", "/", "15"}], "+", 
+            RowBox[{"10", "*", "t"}]}], "]"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "8"}], "+", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"12", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"26", "/", "17"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"51", "/", "11"}], "+", 
+            RowBox[{"13", "*", "t"}]}], "]"}], "/", "3"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"11", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"61", "/", "13"}], "+", 
+              RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"9", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "7"}], "+", 
+              RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"18", "/", "11"}], "+", 
+              RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"5", "/", "14"}], "+", 
+            RowBox[{"19", "*", "t"}]}], "]"}], "/", "19"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"12", "/", "7"}], "+", 
+              RowBox[{"20", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}]}], 
+        ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"27", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "23"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"389", "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"138", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"21", "/", "13"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"215", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "12"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"457", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"33", "/", "7"}], "+", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "24"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"185", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"21", "/", "13"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"61", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"31", "/", "7"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "30"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"191", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"5", "/", "3"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "32"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"19", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "10"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"13", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "7"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "8"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"63", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"7", "/", "4"}], "+", 
+              RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "31"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"22", "/", "5"}], "+", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"11", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"12", "/", "7"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}]}], ")"}],
+        "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"23", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "19"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1494", "/", "5"}], "-", 
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"10", "/", "9"}], "-", 
+           RowBox[{"29", "*", "t"}]}], "]"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "9"}], "-", 
+              RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"166", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "10"}], "-", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"56", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"86", "/", "19"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "3"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"649", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "11"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "26"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1053", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"25", "/", "17"}], "+", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"125", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"25", "/", "12"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"404", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"50", "/", "11"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"32", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"47", "/", "11"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"31", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"31", "/", "7"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "4"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"9", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "8"}], "+", 
+              RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"166", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"59", "/", "13"}], "+", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "33"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"11", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "10"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"35", "/", "11"}], "+", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"137", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"53", "/", "12"}], "+", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"239", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"11", "/", "8"}], "+", 
+              RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "40"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "8"}], "+", 
+              RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"225", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"43", "/", "10"}], "+", 
+              RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "32"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"25", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"10", "/", "7"}], "+", 
+              RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"38", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"37", "/", "9"}], "+", 
+              RowBox[{"20", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"23", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"5", "/", "3"}], "+", 
+              RowBox[{"21", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"2", "/", "13"}], "+", 
+              RowBox[{"22", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"19", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"53", "/", "12"}], "+", 
+              RowBox[{"23", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"11", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"20", "/", "9"}], "+", 
+              RowBox[{"24", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"5", "/", "16"}], "+", 
+              RowBox[{"25", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"9", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"21", "/", "5"}], "+", 
+              RowBox[{"26", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"10", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "5"}], "+", 
+              RowBox[{"27", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"16", "/", "13"}], "+", 
+              RowBox[{"28", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"10", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"38", "/", "13"}], "+", 
+              RowBox[{"30", "*", "t"}]}], "]"}]}], ")"}], "/", "19"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"23", "/", "14"}], "+", 
+              RowBox[{"31", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"18", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"43", "/", "10"}], "+", 
+              RowBox[{"32", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"50", "/", "17"}], "+", 
+              RowBox[{"33", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"12", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"27", "/", "13"}], "+", 
+              RowBox[{"34", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"15", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"55", "/", "12"}], "+", 
+              RowBox[{"35", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{"1", "+", 
+              RowBox[{"36", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}]}], 
+        ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"19", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "15"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1589", "/", "6"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"9", "/", "17"}], "-", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"14", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"4", "/", "9"}], "-", 
+              RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"5", "/", "11"}], "-", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"26", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "6"}], "-", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"46", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"35", "/", "36"}], "-", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"769", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "39"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"68", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"29", "/", "8"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"75", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"5", "/", "3"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "38"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"45", "/", "17"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"9", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"59", "/", "16"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"37", "/", "8"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"29", "/", "14"}], "+", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"2", "/", "3"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"24", "/", "11"}], "+", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "4"}], "+", 
+              RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "2"}], "+", 
+              RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "5"}], "+", 
+              RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"15", "/", "7"}], "+", 
+            RowBox[{"18", "*", "t"}]}], "]"}], "/", "14"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"35", "/", "9"}], "+", 
+            RowBox[{"19", "*", "t"}]}], "]"}], "/", "4"}]}], ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"15", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "11"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1816", "/", "7"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"3", "/", "2"}], "-", 
+              RowBox[{"20", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "13"}], "-", 
+              RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "16"}], "-", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"5", "/", "8"}], "-", 
+            RowBox[{"16", "*", "t"}]}], "]"}], "/", "4"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "13"}], "-", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"476", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "4"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"568", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "3"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "21"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"61", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"29", "/", "9"}], "+", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"26", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"27", "/", "7"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"108", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"20", "/", "7"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "19"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"19", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"37", "/", "11"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"32", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "7"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "9"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"25", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"48", "/", "19"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"19", "/", "5"}], "+", 
+            RowBox[{"10", "*", "t"}]}], "]"}], "/", "4"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"25", "/", "14"}], "+", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"7", "/", "5"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "11"}], "+", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"10", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"38", "/", "37"}], "+", 
+              RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"7", "/", "9"}], "+", 
+              RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"3", "/", "5"}], "+", 
+              RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}]}], ")"}],
+        "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"11", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "7"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"809", "/", "6"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"72", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"14", "/", "13"}], "-", 
+              RowBox[{"20", "*", "t"}]}], "]"}]}], ")"}], "/", "71"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"51", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "2"}], "-", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "50"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"9", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"4", "/", "9"}], "-", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "2"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"87", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"17", "/", "13"}], "-", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"527", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"9", "/", "2"}], "+", "t"}], "]"}]}], ")"}], "/", "6"}],
+          "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"59", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "2"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"35", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"3", "/", "7"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"13", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"2", "/", "3"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"11", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "8"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"48", "/", "11"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"33", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{"2", "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"29", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"16", "/", "13"}], "+", 
+              RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"22", "/", "5"}], "+", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"10", "/", "9"}], "+", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"13", "/", "4"}], "+", 
+            RowBox[{"14", "*", "t"}]}], "]"}], "/", "2"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"7", "/", "4"}], "+", 
+              RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"23", "/", "7"}], "+", 
+              RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"34", "/", "9"}], "+", 
+              RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"9", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"24", "/", "11"}], "+", 
+              RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"19", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"10", "/", "21"}], "+", 
+              RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"55", "/", "12"}], "+", 
+              RowBox[{"21", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"8", "/", "15"}], "+", 
+              RowBox[{"22", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"3", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"35", "/", "9"}], "+", 
+              RowBox[{"23", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{"4", "+", 
+            RowBox[{"24", "*", "t"}]}], "]"}], "/", "7"}]}], ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"7", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2402", "/", "5"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"16", "/", "13"}], "-", 
+              RowBox[{"24", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "-", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"1", "/", "2"}], "-", 
+            RowBox[{"21", "*", "t"}]}], "]"}], "/", "32"}], "-", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"5", "/", "4"}], "-", 
+            RowBox[{"20", "*", "t"}]}], "]"}], "/", "13"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "12"}], "-", 
+              RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"7", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"24", "/", "23"}], "-", 
+              RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"15", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"39", "/", "38"}], "-", 
+              RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "16"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "45"}], "-", 
+              RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"25", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"4", "/", "11"}], "-", 
+              RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "19"}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"13", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"5", "/", "7"}], "-", 
+              RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1063", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"18", "/", "13"}], "+", "t"}], "]"}]}], ")"}], "/", 
+          "7"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"99", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"4", "/", "11"}], "+", 
+              RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "20"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"219", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"19", "/", "14"}], "+", 
+              RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"12", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"1", "/", "8"}], "+", 
+              RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"19", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"20", "/", "13"}], "+", 
+              RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"5", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"65", "/", "14"}], "+", 
+              RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"14", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"13", "/", "9"}], "+", 
+              RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"10", "/", "19"}], "+", 
+              RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"45", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"7", "/", "6"}], "+", 
+              RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "23"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"11", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"18", "/", "11"}], "+", 
+              RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"55", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"25", "/", "17"}], "+", 
+              RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "18"}], "+", 
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"3", "/", "7"}], "+", 
+           RowBox[{"15", "*", "t"}]}], "]"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"8", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"32", "/", "7"}], "+", 
+              RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"34", "/", "13"}], "+", 
+              RowBox[{"22", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"6", "*", 
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              RowBox[{"5", "/", "4"}], "+", 
+              RowBox[{"23", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}]}], 
+        ")"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{
+         RowBox[{"3", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+       RowBox[{"UnitStep", "[", 
+        RowBox[{"Pi", "+", "t"}], "]"}]}]}], ")"}], "*", 
+    RowBox[{"UnitStep", "[", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"Sign", "[", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"t", "/", "2"}], "]"}], "]"}], "]"}], "]"}]}]}], 
+  "\n"}]], "Input",
+ CellChangeTimes->{{3.69598735327388*^9, 3.695987353274705*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"y", "[", "t_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2540", "/", "3"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"14", "/", "9"}], "-", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"10", "/", "9"}], "-", 
+           RowBox[{"8", "*", "t"}]}], "]"}], "/", "27"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"16", "/", "11"}], "-", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"32", "/", "21"}], "-", 
+           RowBox[{"6", "*", "t"}]}], "]"}], "/", "14"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"14", "/", "9"}], "-", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"14", "/", "11"}], "-", 
+           RowBox[{"4", "*", "t"}]}], "]"}], "/", "5"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"15", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"14", "/", "9"}], "-", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"8", "/", "7"}], "-", 
+           RowBox[{"2", "*", "t"}]}], "]"}], "/", "5"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"98", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "-", "t"}], "]"}]}], ")"}], "/", 
+         "5"}]}], ")"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"51", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "47"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"4539", "/", "5"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"9", "/", "8"}], "-", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"6", "/", "5"}], "-", 
+           RowBox[{"8", "*", "t"}]}], "]"}], "/", "6"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"15", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"19", "/", "13"}], "-", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"10", "/", "7"}], "-", 
+           RowBox[{"6", "*", "t"}]}], "]"}], "/", "2"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"447", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"47", "/", "10"}], "+", "t"}], "]"}]}], ")"}], "/", 
+         "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"305", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"61", "/", "13"}], "+", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"137", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"14", "/", "3"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "25"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"70", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"75", "/", "16"}], "+", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"79", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"61", "/", "13"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "16"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "12"}], "+", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"75", "/", "16"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"35", "/", "8"}], "+", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"23", "/", "5"}], "+", 
+           RowBox[{"13", "*", "t"}]}], "]"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"5", "/", "2"}], "+", 
+           RowBox[{"14", "*", "t"}]}], "]"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"104", "/", "23"}], "+", 
+             RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"21", "/", "5"}], "+", 
+           RowBox[{"16", "*", "t"}]}], "]"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"37", "/", "8"}], "+", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"38", "/", "9"}], "+", 
+           RowBox[{"18", "*", "t"}]}], "]"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"37", "/", "8"}], "+", 
+             RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}]}], ")"}], 
+      "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"47", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "43"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"9531", "/", "11"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"26", "/", "17"}], "-", 
+             RowBox[{"20", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "2"}], "-", 
+             RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"25", "/", "17"}], "-", 
+             RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"14", "/", "9"}], "-", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"22", "/", "15"}], "-", 
+           RowBox[{"11", "*", "t"}]}], "]"}], "/", "3"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "-", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"23", "/", "15"}], "-", 
+           RowBox[{"8", "*", "t"}]}], "]"}], "/", "2"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"243", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "-", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"133", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "+", "t"}], "]"}]}], ")"}], "/", 
+         "11"}], "+", 
+        RowBox[{"Sin", "[", 
+         RowBox[{
+          RowBox[{"14", "/", "9"}], "+", 
+          RowBox[{"3", "*", "t"}]}], "]"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"43", "/", "10"}], "+", 
+           RowBox[{"4", "*", "t"}]}], "]"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"13", "/", "9"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"21", "/", "13"}], "+", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "5"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "5"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"18", "/", "11"}], "+", 
+           RowBox[{"15", "*", "t"}]}], "]"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"65", "/", "14"}], "+", 
+           RowBox[{"16", "*", "t"}]}], "]"}], "/", "17"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "+", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"7", "/", "4"}], "+", 
+           RowBox[{"18", "*", "t"}]}], "]"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"3", "/", "2"}], "+", 
+           RowBox[{"19", "*", "t"}]}], "]"}], "/", "10"}]}], ")"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"43", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "39"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"6134", "/", "7"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"13", "/", "10"}], "-", 
+           RowBox[{"19", "*", "t"}]}], "]"}], "/", "17"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"10", "/", "7"}], "-", 
+           RowBox[{"18", "*", "t"}]}], "]"}], "/", "32"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "-", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"171", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "-", "t"}], "]"}]}], ")"}], "/", "5"}],
+         "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"17", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"19", "/", "12"}], "+", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"96", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"19", "/", "12"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"21", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"18", "/", "11"}], "+", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"21", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"47", "/", "10"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "22"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"14", "/", "9"}], "+", 
+           RowBox[{"6", "*", "t"}]}], "]"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"21", "/", "13"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "4"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"12", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "5"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"14", "/", "3"}], "+", 
+           RowBox[{"11", "*", "t"}]}], "]"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"13", "/", "8"}], "+", 
+           RowBox[{"12", "*", "t"}]}], "]"}], "/", "2"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"5", "/", "3"}], "+", 
+           RowBox[{"13", "*", "t"}]}], "]"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"35", "/", "8"}], "+", 
+           RowBox[{"14", "*", "t"}]}], "]"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"5", "/", "3"}], "+", 
+           RowBox[{"15", "*", "t"}]}], "]"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"23", "/", "13"}], "+", 
+           RowBox[{"16", "*", "t"}]}], "]"}], "/", "6"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"22", "/", "13"}], "+", 
+           RowBox[{"17", "*", "t"}]}], "]"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"61", "/", "13"}], "+", 
+           RowBox[{"20", "*", "t"}]}], "]"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"22", "/", "13"}], "+", 
+             RowBox[{"21", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}]}], ")"}],
+       "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"39", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "35"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"6079", "/", "7"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "2"}], "-", 
+             RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"16", "/", "11"}], "-", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "16"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"1", "/", "10"}], "-", 
+           RowBox[{"10", "*", "t"}]}], "]"}], "/", "6"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"36", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"10", "/", "7"}], "-", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"239", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "-", "t"}], "]"}]}], ")"}], "/", "4"}],
+         "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"67", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "+", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "2"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"66", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"23", "/", "15"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"61", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "11"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "5"}], "+", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "9"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"34", "/", "23"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "5"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"66", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"37", "/", "25"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "65"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "5"}], "+", 
+             RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"47", "/", "10"}], "+", 
+             RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"32", "/", "21"}], "+", 
+             RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "8"}], "+", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}]}], ")"}], 
+      "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"35", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "31"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"1421", "/", "2"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{"1", "-", 
+           RowBox[{"16", "*", "t"}]}], "]"}], "/", "6"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"6", "/", "13"}], "-", 
+           RowBox[{"12", "*", "t"}]}], "]"}], "/", "62"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"1", "/", "7"}], "-", 
+           RowBox[{"10", "*", "t"}]}], "]"}], "/", "6"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"1", "/", "5"}], "-", 
+           RowBox[{"8", "*", "t"}]}], "]"}], "/", "2"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "8"}], "-", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "10"}], "-", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "2"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"43", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "11"}], "-", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"910", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"29", "/", "19"}], "+", "t"}], "]"}]}], ")"}], "/", 
+         "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"98", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"25", "/", "17"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"15", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "11"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"13", "/", "8"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"13", "/", "8"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"23", "/", "22"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"6", "/", "7"}], "+", 
+           RowBox[{"13", "*", "t"}]}], "]"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"33", "/", "7"}], "+", 
+           RowBox[{"14", "*", "t"}]}], "]"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"73", "/", "72"}], "+", 
+             RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "7"}], "+", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}]}], ")"}],
+       "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"31", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "27"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"5622", "/", "7"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"7", "/", "8"}], "-", 
+           RowBox[{"19", "*", "t"}]}], "]"}], "/", "33"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"199", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "-", "t"}], "]"}]}], ")"}], "/", "6"}],
+         "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"147", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "+", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"47", "/", "10"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"134", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "+", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"31", "/", "21"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "15"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "5"}], "+", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"19", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"23", "/", "15"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"13", "/", "8"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"38", "/", "25"}], "+", 
+           RowBox[{"9", "*", "t"}]}], "]"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "+", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"65", "/", "14"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"12", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "11"}], "+", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"51", "/", "11"}], "+", 
+             RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"20", "/", "13"}], "+", 
+             RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "7"}], "+", 
+             RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"23", "/", "14"}], "+", 
+           RowBox[{"16", "*", "t"}]}], "]"}], "/", "4"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"12", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "11"}], "+", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "23"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"23", "/", "5"}], "+", 
+           RowBox[{"18", "*", "t"}]}], "]"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"13", "/", "8"}], "+", 
+           RowBox[{"20", "*", "t"}]}], "]"}], "/", "6"}]}], ")"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"27", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "23"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"9279", "/", "13"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"6", "/", "5"}], "-", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "23"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"20", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "6"}], "-", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "19"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"29", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"14", "/", "11"}], "-", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "15"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"15", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "13"}], "-", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "16"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"88", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"18", "/", "13"}], "-", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"149", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"34", "/", "23"}], "-", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"676", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "2"}], "-", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "45"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1671", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"14", "/", "9"}], "-", "t"}], "]"}]}], ")"}], "/", 
+         "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "5"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"33", "/", "7"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"18", "/", "11"}], "+", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "15"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"16", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"61", "/", "13"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}]}], ")"}],
+       "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"23", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "19"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"5938", "/", "9"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"9", "/", "8"}], "-", 
+             RowBox[{"36", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"9", "/", "7"}], "-", 
+             RowBox[{"34", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "7"}], "-", 
+             RowBox[{"32", "*", "t"}]}], "]"}]}], ")"}], "/", "15"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"14", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "5"}], "-", 
+             RowBox[{"30", "*", "t"}]}], "]"}]}], ")"}], "/", "15"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "10"}], "-", 
+             RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"16", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "9"}], "-", 
+             RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1031", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"37", "/", "8"}], "+", "t"}], "]"}]}], ")"}], "/", "8"}],
+         "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1018", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"47", "/", "10"}], "+", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{"137", "*", 
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"22", "/", "15"}], "+", 
+           RowBox[{"3", "*", "t"}]}], "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"577", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"4", "/", "3"}], "+", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"52", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"9", "/", "7"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"229", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"21", "/", "16"}], "+", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"55", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "8"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"145", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"23", "/", "5"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"104", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"19", "/", "13"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"23", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "8"}], "+", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"65", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "5"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "16"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"29", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"51", "/", "11"}], "+", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "15"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"55", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "4"}], "+", 
+             RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"17", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"31", "/", "16"}], "+", 
+             RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"36", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"6", "/", "13"}], "+", 
+             RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"89", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"6", "/", "7"}], "+", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "22"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"20", "/", "11"}], "+", 
+             RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"1", "/", "8"}], "+", 
+             RowBox[{"20", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"18", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "4"}], "+", 
+             RowBox[{"21", "*", "t"}]}], "]"}]}], ")"}], "/", "17"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"17", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"60", "/", "13"}], "+", 
+             RowBox[{"22", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"20", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "4"}], "+", 
+             RowBox[{"23", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"82", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"1", "/", "7"}], "+", 
+             RowBox[{"24", "*", "t"}]}], "]"}]}], ")"}], "/", "81"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"28", "/", "11"}], "+", 
+             RowBox[{"25", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"32", "/", "7"}], "+", 
+             RowBox[{"26", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "7"}], "+", 
+             RowBox[{"27", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"47", "/", "10"}], "+", 
+             RowBox[{"28", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "8"}], "+", 
+             RowBox[{"29", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"4", "/", "7"}], "+", 
+             RowBox[{"31", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "7"}], "+", 
+             RowBox[{"33", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"29", "/", "19"}], "+", 
+           RowBox[{"35", "*", "t"}]}], "]"}], "/", "2"}]}], ")"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"19", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "15"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"4307", "/", "11"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "10"}], "-", 
+             RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "4"}], "-", 
+             RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"8", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"1", "/", "14"}], "-", 
+             RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "25"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"35", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "/", "9"}], "-", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"48", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "12"}], "-", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"153", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"13", "/", "11"}], "-", "t"}], "]"}]}], ")"}], "/", 
+         "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"587", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "10"}], "+", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "21"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"113", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "10"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "19"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"383", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "11"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "24"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"13", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"41", "/", "21"}], "+", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"86", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"43", "/", "10"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"31", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"45", "/", "11"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"29", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"13", "/", "5"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"44", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"1", "+", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "15"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "5"}], "+", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"20", "/", "7"}], "+", 
+             RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"12", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "2"}], "+", 
+             RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"21", "/", "8"}], "+", 
+             RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"1", "/", "10"}], "+", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}]}], ")"}],
+       "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"15", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "11"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"1352", "/", "7"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"23", "/", "24"}], "-", 
+           RowBox[{"19", "*", "t"}]}], "]"}], "/", "4"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"6", "/", "19"}], "-", 
+           RowBox[{"18", "*", "t"}]}], "]"}], "/", "47"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"3", "/", "13"}], "-", 
+           RowBox[{"17", "*", "t"}]}], "]"}], "/", "17"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"7", "/", "6"}], "-", 
+           RowBox[{"16", "*", "t"}]}], "]"}], "/", "6"}], "-", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"4", "/", "7"}], "-", 
+           RowBox[{"14", "*", "t"}]}], "]"}], "/", "8"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "5"}], "-", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1967", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"23", "/", "5"}], "+", "t"}], "]"}]}], ")"}], "/", 
+         "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"177", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"13", "/", "10"}], "+", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "16"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"664", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"22", "/", "5"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "39"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"22", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "/", "3"}], "+", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "15"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"41", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"30", "/", "7"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"15", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"4", "/", "13"}], "+", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"21", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"23", "/", "6"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "13"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"12", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "3"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"35", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "8"}], "+", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "36"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"41", "/", "12"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"19", "/", "15"}], "+", 
+           RowBox[{"13", "*", "t"}]}], "]"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"10", "/", "7"}], "+", 
+             RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"38", "/", "39"}], "+", 
+           RowBox[{"20", "*", "t"}]}], "]"}], "/", "9"}]}], ")"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"11", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "7"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"3455", "/", "16"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"1", "/", "12"}], "-", 
+             RowBox[{"23", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"1", "/", "7"}], "-", 
+             RowBox[{"16", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"18", "/", "13"}], "-", 
+             RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "3"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"25", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"18", "/", "13"}], "-", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"47", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"10", "/", "7"}], "-", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "24"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"767", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"23", "/", "10"}], "+", "t"}], "]"}]}], ")"}], "/", 
+         "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"84", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "15"}], "+", 
+             RowBox[{"2", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"173", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"27", "/", "10"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"22", "/", "7"}], "+", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"13", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"19", "/", "6"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"38", "/", "11"}], "+", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "2"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"23", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"47", "/", "11"}], "+", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"14", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"14", "/", "13"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"14", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "12"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"17", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"11", "/", "4"}], "+", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{"Sin", "[", 
+         RowBox[{
+          RowBox[{"34", "/", "9"}], "+", 
+          RowBox[{"13", "*", "t"}]}], "]"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"2", "/", "11"}], "+", 
+           RowBox[{"15", "*", "t"}]}], "]"}], "/", "2"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"9", "/", "11"}], "+", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "13"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"8", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"8", "/", "3"}], "+", 
+             RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "11"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"40", "/", "9"}], "+", 
+             RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"21", "/", "11"}], "+", 
+             RowBox[{"20", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"23", "/", "9"}], "+", 
+             RowBox[{"21", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"4", "+", 
+             RowBox[{"22", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"29", "/", "19"}], "+", 
+             RowBox[{"24", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}]}], ")"}], 
+      "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"7", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "3"}], "*", "Pi"}], "+", "t"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2878", "/", "11"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "2"}], "-", 
+             RowBox[{"24", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"1", "/", "4"}], "-", 
+             RowBox[{"18", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "7"}], "-", 
+             RowBox[{"17", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"11", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "8"}], "-", 
+             RowBox[{"13", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"15", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"9", "/", "19"}], "-", 
+             RowBox[{"7", "*", "t"}]}], "]"}]}], ")"}], "/", "31"}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"13", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "9"}], "-", 
+             RowBox[{"4", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "-", 
+        RowBox[{"13", "*", 
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"5", "/", "7"}], "-", 
+           RowBox[{"2", "*", "t"}]}], "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5113", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "2"}], "+", "t"}], "]"}]}], ")"}], "/", "72"}],
+         "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"145", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"15", "/", "7"}], "+", 
+             RowBox[{"3", "*", "t"}]}], "]"}]}], ")"}], "/", "24"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"17", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"7", "/", "3"}], "+", 
+             RowBox[{"5", "*", "t"}]}], "]"}]}], ")"}], "/", "8"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"8", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"151", "/", "50"}], "+", 
+             RowBox[{"6", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"3", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"5", "/", "8"}], "+", 
+             RowBox[{"8", "*", "t"}]}], "]"}]}], ")"}], "/", "4"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"101", "/", "25"}], "+", 
+             RowBox[{"9", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "/", "5"}], "+", 
+             RowBox[{"10", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"6", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"41", "/", "11"}], "+", 
+             RowBox[{"11", "*", "t"}]}], "]"}]}], ")"}], "/", "5"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"19", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"25", "/", "7"}], "+", 
+             RowBox[{"12", "*", "t"}]}], "]"}]}], ")"}], "/", "10"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"26", "/", "25"}], "+", 
+             RowBox[{"14", "*", "t"}]}], "]"}]}], ")"}], "/", "6"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"9", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"19", "/", "6"}], "+", 
+             RowBox[{"15", "*", "t"}]}], "]"}]}], ")"}], "/", "14"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"15", "/", "4"}], "+", 
+           RowBox[{"16", "*", "t"}]}], "]"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"4", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"2", "/", "5"}], "+", 
+             RowBox[{"19", "*", "t"}]}], "]"}]}], ")"}], "/", "7"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"13", "/", "5"}], "+", 
+           RowBox[{"20", "*", "t"}]}], "]"}], "/", "6"}], "+", 
+        RowBox[{
+         RowBox[{"Sin", "[", 
+          RowBox[{
+           RowBox[{"25", "/", "19"}], "+", 
+           RowBox[{"21", "*", "t"}]}], "]"}], "/", "16"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"5", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"3", "/", "8"}], "+", 
+             RowBox[{"22", "*", "t"}]}], "]"}]}], ")"}], "/", "12"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"7", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             RowBox[{"17", "/", "5"}], "+", 
+             RowBox[{"23", "*", "t"}]}], "]"}]}], ")"}], "/", "9"}]}], ")"}], 
+      "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{
+        RowBox[{"3", "*", "Pi"}], "-", "t"}], "]"}], "*", 
+      RowBox[{"UnitStep", "[", 
+       RowBox[{"Pi", "+", "t"}], "]"}]}]}], ")"}], "*", 
+   RowBox[{"UnitStep", "[", 
+    RowBox[{"Sqrt", "[", 
+     RowBox[{"Sign", "[", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"t", "/", "2"}], "]"}], "]"}], "]"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.695987433171896*^9, 3.695987457129836*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "[", "t", "]"}], ",", " ", 
+     RowBox[{"y", "[", "t", "]"}]}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", " ", "0", ",", " ", 
+     RowBox[{"52", " ", "Pi"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.695987449350171*^9, 3.695987449363741*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], FaceForm[Opacity[0.3]], LineBox[CompressedData["
+1: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
+       "]], LineBox[CompressedData["
+1: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
+VvxSDqUM/wNkVknf
+       "]], LineBox[CompressedData["
+1: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
+3UdVvQ==
+       "]], LineBox[CompressedData["
+1:eJwVlXtUzIkbxgtd0FVIJE3pYlVIjS7Teui2qVVSbbnVRDOaTM2Mme+tQiwh
+Ff3yI5KNdV/SRRfql2zRZpJEU5uWVIQukpIKO78/3vOe5zx/Pec9z+dlRcYF
+Rk1SUVGJV87/Nz/wQsF5axGyTWd+bHtAY6XWL8Z1qSJcXKCbx31J41yod+yy
+yWJc/PLfHMvPNJZ/1bM7mSDGoqDip8nfaPSa5q3ZPyzGlcVertMHabT+Fj//
+p2gJvFcND0Q10fgurGdtbZbA6Pp5Nj+fBqV+xv76yp04s/R46MnjNE7qW2cs
+uboTxEctzWl7aTzvefofByMpiuQjfb/H0bB1a0nzT5HCvN/IbGoQjVQdTbZk
+TIp/TGKdu61pHGK7V3/bIsPuy4PvGvsp2OmcvlRXKMOUWS9zG65QmMJ1tEgb
+leHb6/0N5hspcEqGP0iXEfiWnvZc8Y3E247yo7xtBB5e6NT0OUrCiqzktR4n
+YDVQcY5lQMJNxm4duE9gSbjOu5QsAocqbR5mDBPoGdsg9l5FIL87mG1kQiKa
+enLJ24pAx0atrkQ3EruSDOSCUAKznfzfsNeTOGVUuy6zlkBbuqXx7EgSE7FV
+YZ3BJELW/m3+Mo5E6uYzBb7NJBLrAzgp+0i4br5VUWhFYcJsrm7aORI2fzof
++O5MYX/bwRSvRyR6ibaUH3Up+HnG5bdOonCiejSpqohEutqSiAQnCtN6AnYk
+uJJ4Nq5u9ZRHQZrNSTlbRGBmnXNA5UEK8xcOV+2zJ+DZd6LklxwKZec0l4/9
+JUOmjXvYp2sUVIvlnJ50Gb4Sbbb1xRR2qbOaSjNkWGzH9ourouBgrpEla5LB
+RW3K6tV1FCihw4VKdwJJGgZ9HXIKc3MkY5YPCQgCONxZNRQ8h0O0ktaRsM3b
+cnNRPoUuYe0OcS2J26yvyywzKHyAq4HCjkKWvOvUbAGFusDDPz85QkGScS98
+tguFz0HLb5a+V+Y6zXNKmyDRxns7Sy2URh83pdtbmbutaizn1xoauUXPnAa4
+JMK2Oi3OWcxgxNWic0iDhDdhFXj6VwaBBqVuUZcJLJrj2LDxMYPoWezogdUE
+ereX58j14lHaXPj2+jMZ0gpiW9Q84vEmjvAtjJDBPLhVtZ0bD5XE2sLnPVKE
+7sz+ei88Hp/4s1XWEFJsilhgl+MUjyFeN03rSHGVZh6qDzF4v9dj/bEbO9Hw
+vM3KIpfBphxGX+S7Ew7Mg4CsMAZT/O7mq7VKkPg6oXW9LYOK3H5jxyAJtO1L
+DTimDFZsX+YsfiCG5Q7D1CZrBoOee+yOeIrheOWPknY2A62SxM6sdhH0o7F0
+hMPAPH3cV3JUBPU/WTN4KxgoPp98n+IvgqFLco3QhsEhyUtMVxdhZgnZIbNk
+0NFybFC+Jg7UhoWnpUq/8/2GCiIsFlejClwK3BiwjDgO/X5CGJdfPBW6nsGu
+sd+2nP1xB7Q/yBo7ohgsuHk2rcU1BgZplEuDmEGIo4fdi1UCHDBMvzGHYnB8
+/P5yhVc01tYYWKQyynsEOXtN8tqOmv78mDKSwRP/4lZ7Tz4GA1N1dQUMBE4+
+ew4H8JBh5xw0voZB7bvGuGviKBw7OjnHzpBBwmE37fEr2zDzh7hFyY9pmIzr
+/VE4tBXy2+wbggQa9pbxupXeW0Fd052QmtIYLS0K2Xc+Em+S2rv97lJwlycY
+sKYr9eXTG45uptCRcjsxL5mL6r6asshREuaSfU8nzLg4Mm+Qr5pOQhGs8en6
+qwjwbW2OzZlPIttL3JtcHQHj4kMm2WcI+NerqPZURODtQpZurh6BidDcR28r
+IxCuHTM9cK8M5QejR9yVuun39xFntWQo0U+1Iu5EYEyTEWg0SBGuEPNLlb6a
+hfhK5z9SnOnLq8tuU+qZd0cfOcvgc/hRebshF4mjq75vr1b2MWjYUV3ExU8O
+XZ1qSr7of6E+9TRzoW1WK/3aTMA0Sejr6h4JkwS9FR+clRwqif/rY1kkqgYH
+bnmmkiCWDJVH+23F5xnvnBQdJIIfR0ZemroNbzg8YQ+HQuOdg2vX9W2Dz6xg
+wSdlL4vL7tQt/TsK8QlPB7c0UGA5LgpedpGH7w/+92hGBwWXE19u+i7lw6ea
+z2tRciGLd2vXBxEfXhWbbiikFMbq8va003zcjymhYlSVnJkmdPLh83GSEP6g
+EJO4/rm/xcSfj5Cr9cwxBQFn7+ScRhc+yJHicsVaAsen9654bcvHZfYqTsYX
+GawLamx8lvAxPNRrL++X4daCTO9+Hz52awrd860JFGUOFasf5kMyRcPGM1PJ
+W03LU/IhPjpMblEuM0hc0G2ykO/ejnk6TY9ZB0hsSBvZq7UgGnM15MavX5HY
+aM72+Lk6GmN9zdzXNhT6Sxa77ooRoKdLxcZVTOEFcchQbW4M2oYn69mWUVjp
+n981oyUGr6qss9Un09ApU3U6e3kHVjR2v6zyoDGvIe1B+AEhUrW9ugJlNMIC
+A9we8mMxVWCitjuTRlHqnUbSKw7veg54d12lMRTxoqhOXwSdmjtF0nvK/9Zg
+EJJkJkJoSlT9tvs0/gXCfIwq
+       "]], LineBox[CompressedData["
+1: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
+Rd4LvPWTlTVPXehgs4PY/AW+/gfhNonr
+       "]], LineBox[CompressedData["
+1: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
+uv/+B+NLO7g=
+       "]], LineBox[CompressedData["
+1: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
+3/8BOJSD2Q==
+       "]], LineBox[CompressedData["
+1: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
+O70NcmRHzduPTtCxqMwYaVPx/wFzRP2X
+       "]], LineBox[CompressedData["
+1:eJwVlXs4lAkbxoeY2LKkHKpd5EtF7WwkHbbDjaSIShdhzBhjMGZGzAyrcyGH
+9515S5IylkoS6/BFOjmr2BRaX8qhvkWIDuMQko7ffH8813M91/Vc933/8/ye
+RdxwjyB1Go12UFX/7zZ1Da9jxFGIkbeeVWrJ8ESy174+Mgp0C+bFZm0ZnHht
++q+8ovDMfFjuR5NhqHj76s5vkRj0+4WYNUDCy67RLzsxEqZjv/qkVJNIiK5W
+u/VjJIwunFllmUqipKgqRueKFFXb/+5LEZBI036X77VdilzX6tuHHEkMZpgE
+TislSDxrc3OeKQmN9n/HH4uXoNjI18XiG4F+hjwrcLYE6yaNW3JeErCYXTX9
+mRCDMp172beFQJ9xSoStthiWk/8601ZLQMLSm7p0KgI1NTmKGzcJfGg5rEFf
+EIEW9WqFTwGBm6mzT6rZhyO7iq/TmUHgfFt2d/uGfRi3CIlnEARai7e812OE
+AXffjN+KJjB+733A3xYiaFSK8zeLCAwFpunprxQie8fN+Hw+AWH74asuWwWI
+Xt59/r6AQNyutNatu0KxUmkTZLePQPrFnC87bPlw953onR9BIKuq9q9tb4Oh
+3T4xRIkJaFYvV14hgnAnwHreEpXfVqPS9FmreXgRd+PGiXgCP/ubEot0AqHV
++NJckUmgMrEtMNuIi/6MrOWiCgJH2YtuHd8UgAv0R9OxHQTkzMsBkVwOrE4V
+TgpGCdhVLWHavWXjpUhXaaJB4oOoqlVpyIJ86Fhe53wS5y6XhUTlMOH6n+tr
+3NeROKD1bsBkzBf7HX+b8TiYRLdv9ukjZkys2HrEreAiiULnBK1Jmh8U12pt
+D/eQ2H9D/rTOjIUuTbcDHFMZGCGG3ep0Nhq3bSm39pWBqcGbKA5ho7Sdn9aX
+IkP35ONNec5sSF3C01xaZJhY9TlivI+F5T9ViD/pyuEV6bc36iQLBxw5t/X2
+yjFSTx0vTWDB/q/e3uFMOehfb/u3vGbha51uXOcLOT5ROoWW5Wzs7Q0Ozdeh
+YF6k02Q96g/N+gjSh0HBamJPU18dB6miDoft9hQW/SKctbksAIvtytpTXCmE
+pq1heN7l4p+y7MRaDwomuj+XO3cEAkY0OZ1JwX3uznTaSx5Wu2rd5QZToInl
+WY+fBsFE62RqUCQF16HI9BkVwWCZfT3Ni6XQHafrZJkbgok0n8RVcgojIV0m
+VgV8aMstvlymKKzMfTiS0xSKUzavGzNOUHhc3nu/slsA7wfFibYqveZlJUOH
+WoWIVgqsnnAojOlxR9dFi2DGdXn7ZheFq3HOfzheE8Gek+nm5ELB67XrpUyx
+CGuPSM4l7aSgfPijT1ijEIyPVbnjbAoD9JIN6p0CvH8Wc1xdSmFJy4oK6kEo
+pCZLZ9xW+W+b1XV9+A4fvBzOA/FJCjzv3UmVNSEockxOH1Hl1bs94yD3eTAy
+j+j7lan2rR04Xm/VguGV0fP5we8UukrUj5KLg7BiQ5Z6AZ/C4A+dMWNreao8
+Wo5CFgUNS550y6ZAlNL+mSzypMCoHysM38hFXKZiS4Eq70fXSlmdUwCmQtoK
+e50pGHruKVbjc8CdM9BisJ5C78Gwjad5/mhcOWjFM6eQYbB+6BiTjVklP91z
++yYHI//ZpbEKFoqk6gWKZjk4HXEPXWJY+OH7JLs6RY5bWfvUctJZOJd814jp
+IceddaOM2f0s9DKi9zbOkcPbXT+XbsOG5R7yivFTGRw2SKo/7GTDcOEc2uFM
+GUZmvlypZsDG8I2G/QahMmia7LpwPoqFs0JhrNhWhihzavr6KT8I7CeGNb+S
+yCN2B3y6ysQ72qM/3e6R0OTN7VhmwISHe/JGKxmJ3ek7plap7knSwXM39yXR
+892z0XCQicI1PmEcWxLNpWcXTO1iIWnKzdV6AYn5rO53dxf441yP/uiZmSTW
+hNk2xx7iwOtos539BwKpvRe3nfMOAHMq33FOL4F6vukGo0Vc0IMnTtxvILBw
+IGOJ1isuWvzTChL/JDCyJ6D2e00gCvp3Jg+cJjC1ezdbt4aH3xTDSYIYArek
+051NPUGY0ra6Qj+o4lf2aGvznBDoN+TVVu8noP3fVxlf1vJRbfh8T4NqpkwS
+bcKcQuHkwonM+J3A0hd5rx3sBChZPJ26VEJA1N5vzDIWwsl4X2maioeKr11v
+zL8I0RPuE2+g4mFh2fPzijcirEgSKT+r9AQfjyUM94RhNGyZ57okAj31RR73
+2/ZhOy9YfzqdQBi/3S+zKhwOO2qivucT6H6slGm7R6DpmvqrFSreTw0Wycor
+IzDX3t83pYbATHvhwo+/ilEZXzQvsZFABdVPT8gTg7HmREZsOwGdDh2PKTMJ
+iPorwevfEsjoapbKkyVw7KsIsVbxcsbOq45OYxI4Wwwom8xIOOqNJtCdpPCu
+a/B+s1n1/w7SXJvOShEkKNW7GEBieSq7/NmIFI82PqWOJZD4Iy5CbUFjJPS6
+tMo920icLPG73G8VBbGDoksxTiKa9Gyr4UfBL3GpMpAuw7NBj9xtEVEYe3Io
+OVX1j/8HiL6QYQ==
+       "]], LineBox[CompressedData["
+1:eJwVlXtUzWkXx0OdUrpQKorqDRWzEhGR6YsORceIOqGiidO51OnckigjKvT8
+fpFWHQZJuiCVLqSQLhTRSzWJGkqRTG8Xo+lG8v7mj2c967v2/q61n73X89kW
+AZJtvMkqKioHmfPvneJu8dJ4igJitTYZq48AmnaK22/lODln28crXQRbPXuW
+RMfLcTYsRtnykmBavsrmIVs5ljR/eZH+kOBQbdlmTrMMPx6b2l8sIoiLcRv1
+p2Sw8NGdnX2VINngwK00yPDUu+kzL4VAeF1sVPe7FFpzXEy4Jwmky3tXvV0v
+xQ6e85HHkQSf/DI+C95LYP6+M+CrlKD8RyJHsF6CHaMdTpk8AsfapJFlqSFY
+GB7rOOFD8NFBKYwaFENj1GLrCS8C5d4+qy62GCnlReenbycYPxJ7NyUlGLMd
+teyKGW3SED3CHgvCjA7sUWPyV74puRPJCcL9igTdKk8Ct9zX5eLTIviuPr/h
+/TaCovRiP2WlEOXKvPVjHgQXvxb6Rg0JcHDcRJvL+DkjY3s0nAVwObjaMGw3
+gXpX3FzNDD4WO7f7aAUTDBSZJegZ89GfkZZ9I4Lgs0uF/am4QNRnut+6TBPY
+VD+I7xviIZyk3DBNI3AvMSyIlPOg/torTHGfgPVHj+00Cx58prd/rmknmFRw
+iZdkzIMKJ6DCVoPCUbHL0FNPHqpzzSJs7Sj429za0FTK+E8bJnhupzBy8ViW
+l3Ug7mTNPN4tpXDv1dDw1DOByHnjGCOhKFRFF696NBqIvYdCPrzIpLDieOY1
+s2A+vHIqpQ8rKHz360l8OsCHj1NxY08rheonD++ejRAgX7Cle+ALhZj9Dm0b
+pgixrPYfmeNUGv2xllWrooWw/FP+hm1GQ6LeUp+gKsLkwSRb7nIaVncETYNJ
+Inz/mpMx6kpDni6eMW9VEOhnhVs2cGn07TfVeNIbBK+bd9PHdtFofXnQoftS
+MJozXBtO76BhupU19fpGMa6LjSHYTuPAgrRXZ/8SY5NXY8vFX2jsrND+mXMq
+BKxz2u8Dt9AwLnNw3ekkQX3J7EdsRk+9Ni4z/1sC6ydkUMShsdSPc117mxQP
+9qaVNm2mEe/5NvHdVSn8U+xOaDI6fU/6SPw3KV5J3Gd+Y7RQZN64zEMGZCWN
+ihl/Xn/Ns/FsGSrnc/Wb3Zn6O1I5S1hy/KrC21TNvE81dquri58cj+LMNGXr
+mPqV0qV7cuUgBsLlp51o7KP6i379KkdH7DdXaiWN96pj+6vdFahdubq6ZxkN
+w1zvN2XXFeCW9PmX2NJYTJ31dNAKxTz25at/zKORXaOmjN4dihUbHd+NzKLR
+0FWUxKZD0afMatysT6MuSb7UPDYU9ERb128GNLyvbSps3RSKngiu/StTGuof
+1p6LGlDArbD0VIMVjah/jv6sQilQkBvrXGZH45zr5u8BtgrotrtVGjnQSBw6
+d8KY4YP93mOdLxxpWCZ+D90ZJ0fNHWWhljON+SZu8ZWL5dC6+a5xgE1De2L/
+kRXPZTDIm1RWxvTPcm5l98wgGSgdvefdTP/qrI4typkmg38k66Uao6c+fXhG
+USjF5JfBIRNM/q6jJ5IbuFKI88P5t5n+FtRYN3/qlUB8+3++u5h5qi4cOPzD
+WoLxC6n8Ncz8A/JCxtPEIRA9UzHNYvSTjjmpGWViDCSU+rZ50Ag1WN9bpiPG
+sPowV82bBkv/avwCr2B0PxPP4vjSyKUj/zqcGATTRa5V8xk9hatuWt4swtLi
+tTi1jYbewgfJo3Yi8GUecbag8cPo59b2VCGsozQWzLWhQVxYGw/qC9F/pfdb
+px6Nk28veGX/JkAry+zRxAiFgPNa3jFdfNSste9c85bCDkP2mu/efJS2FAcT
+5r99aZwxeqEtEA1pRTqR6RQWrmEb/S4JhGZ+1Lq+4xTy7bPqVnzjwTq56T/P
+BRTCMo88FMXwoIjSTwlnUyDKiID6hTzc87hVd9+EQktk7KcLRjx8srTct2eA
+wN4+Z91tXx5m25VwJj0muMRXp9d18aDJKnBeyvBaV/enXxadCETKzRBe9GmC
+wQDPdrP5fGxUGTb3ZfjckPm8VreSj/Byk8ZdQQSZq1tK0yQCLLKw7E3yI3BS
+Sf3T30mIG5duVF5i+KhvFJ932USE6EfZmzoZ/q4OM9GZNSwCTGLCBUy8X5Wb
+cfdBEGQJD9geXAINlwmzJ4eC8Wpv0wsnJr7ef2C5joMYlYeDpTYMn+dZ/y05
+wPC+xjAhfBWT33d8OtHLCYFqx/ThQV+CtGPLtu/3kSDrgo8kgk/QGDXlvzNV
+paAXe07uVBB8/dA2bLZbiiSN+jXJUQTxYRW3lfeksKHG8ksYHnebD+3TM5Qh
+PX1tzshZgirh3A01AhnqPp7h1l4hsDAoybcukYGbG2H7NI/ANsdAHKMjx5kC
+q2Nvyghm3JcPc0PkmM3aKOt9QdCaFxpb9VgOXavk+q0dBNpuB2xmTMjhGHdm
+ilovQcH0wJ8qmP372r7J3YrZv/8H6jJ9lw==
+       "]], LineBox[CompressedData["
+1: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
+sDHBsjqQz98wR/XwW3z+/guOOJ+I
+       "]], LineBox[CompressedData["
+1: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
+       "]], 
+      LineBox[CompressedData["
+1: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
+O1kef9/i8Oc/jE1c5wv8Gf8fD4iS+A==
+       "]], LineBox[CompressedData["
+1:eJxTTMoPSmViYGAQBmIQPQpIAwAuhgHB
+       "]]},
+     Annotation[#, "Charting`Private`Tag$6000#1"]& ], {}}, {{}, {}, {}}},
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{"ScalingFunctions" -> None},
+  PlotRange->{{0., 665.4626018194429}, {0., 945.8055579710167}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.05], 
+     Scaled[0.05]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.6959874704795837`*^9}]
+}, Open  ]]
+},
+WindowSize->{1680, 1030},
+WindowMargins->{{Automatic, 0}, {0, 20}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 65781, 1870, 1200, "Input"],
+Cell[66342, 1892, 63106, 1849, 1178, "Input"],
+Cell[CellGroupData[{
+Cell[129473, 3745, 374, 10, 34, "Input"],
+Cell[129850, 3757, 33975, 580, 480, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

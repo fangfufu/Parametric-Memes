@@ -1,7 +1,7 @@
-function [h] = matlab_plot_pepe()
+function [h] = pepe_matlab()
 %PLOT_PEPE A function for drawing pepe
 
-h = fplot(@funcx, @funcy, [0 92*pi]);
+h = fplot(@funcx, @funcy, [0.001 92*pi], 'MeshDensity', 100);
 axis equal;
 end
 
