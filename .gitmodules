@@ -1,0 +1,3 @@
+[submodule "IPEG"]
+	path = IPEG
+	url = git@github.com:fangfufu/IPEG.git
